@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1B9AB357260DC57B00D261BA /* comboBoxSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1B9AB35A260DC57B00D261BA /* Build configuration list for PBXAggregateTarget "comboBoxSDK" */;
+			buildPhases = (
+				1B9AB35E260DC5B400D261BA /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = comboBoxSDK;
+			productName = comboBoxSDK;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1BC89757260CCC2F001E8608 /* ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC8974D260CCC2E001E8608 /* ComboBoxSDK.framework */; };
 		1BC8975C260CCC2F001E8608 /* ComboBoxSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8975B260CCC2F001E8608 /* ComboBoxSDKTests.swift */; };
@@ -28,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9AB35F260DC6BD00D261BA /* build_cp_to_pub.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_cp_to_pub.sh; sourceTree = "<group>"; };
 		1BC8974D260CCC2E001E8608 /* ComboBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComboBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC89750260CCC2E001E8608 /* ComboBoxSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComboBoxSDK.h; sourceTree = "<group>"; };
 		1BC89751260CCC2E001E8608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +81,7 @@
 		1BC89743260CCC2E001E8608 = {
 			isa = PBXGroup;
 			children = (
+				1B9AB35F260DC6BD00D261BA /* build_cp_to_pub.sh */,
 				1BC8974F260CCC2E001E8608 /* ComboBoxSDK */,
 				1BC8975A260CCC2F001E8608 /* ComboBoxSDKTests */,
 				1BC8974E260CCC2E001E8608 /* Products */,
@@ -183,6 +199,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					1B9AB357260DC57B00D261BA = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					1BC8974C260CCC2E001E8608 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
@@ -207,6 +226,7 @@
 			targets = (
 				1BC8974C260CCC2E001E8608 /* ComboBoxSDK */,
 				1BC89755260CCC2F001E8608 /* ComboBoxSDKTests */,
+				1B9AB357260DC57B00D261BA /* comboBoxSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +249,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B9AB35E260DC5B400D261BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/build_cp_to_pub.sh\n";
+		};
 		F1799F5FBD07A7D6E2B253E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +321,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B9AB358260DC57B00D261BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B9AB359260DC57B00D261BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1BC8975F260CCC2F001E8608 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -500,6 +553,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B9AB35A260DC57B00D261BA /* Build configuration list for PBXAggregateTarget "comboBoxSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9AB358260DC57B00D261BA /* Debug */,
+				1B9AB359260DC57B00D261BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1BC89747260CCC2E001E8608 /* Build configuration list for PBXProject "ComboBoxSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
