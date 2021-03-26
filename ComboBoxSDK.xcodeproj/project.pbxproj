@@ -10,6 +10,11 @@
 		1BC89757260CCC2F001E8608 /* ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC8974D260CCC2E001E8608 /* ComboBoxSDK.framework */; };
 		1BC8975C260CCC2F001E8608 /* ComboBoxSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8975B260CCC2F001E8608 /* ComboBoxSDKTests.swift */; };
 		1BC8975E260CCC2F001E8608 /* ComboBoxSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC89750260CCC2E001E8608 /* ComboBoxSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC89780260CCDB7001E8608 /* EWMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8977D260CCDB7001E8608 /* EWMenuTableViewCell.swift */; };
+		1BC89781260CCDB7001E8608 /* EWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8977E260CCDB7001E8608 /* EWPopMenu.swift */; };
+		1BC89782260CCDB7001E8608 /* EWPopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8977F260CCDB7001E8608 /* EWPopMenuView.swift */; };
+		1BC897BF260CD7BC001E8608 /* DropBoxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC897BE260CD7BC001E8608 /* DropBoxTextField.swift */; };
+		89FF9155980741864E2A64FA /* Pods_ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,13 @@
 		1BC89756260CCC2F001E8608 /* ComboBoxSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComboBoxSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC8975B260CCC2F001E8608 /* ComboBoxSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboBoxSDKTests.swift; sourceTree = "<group>"; };
 		1BC8975D260CCC2F001E8608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC8977D260CCDB7001E8608 /* EWMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EWMenuTableViewCell.swift; path = ComboBoxSDK/EWMenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		1BC8977E260CCDB7001E8608 /* EWPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EWPopMenu.swift; path = ComboBoxSDK/EWPopMenu.swift; sourceTree = SOURCE_ROOT; };
+		1BC8977F260CCDB7001E8608 /* EWPopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EWPopMenuView.swift; path = ComboBoxSDK/EWPopMenuView.swift; sourceTree = SOURCE_ROOT; };
+		1BC897BE260CD7BC001E8608 /* DropBoxTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBoxTextField.swift; sourceTree = "<group>"; };
+		2D106662482E10174D6AB6C5 /* Pods-ComboBoxSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComboBoxSDK.debug.xcconfig"; path = "Target Support Files/Pods-ComboBoxSDK/Pods-ComboBoxSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComboBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5812B41114F4137C4DC565D /* Pods-ComboBoxSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComboBoxSDK.release.xcconfig"; path = "Target Support Files/Pods-ComboBoxSDK/Pods-ComboBoxSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FF9155980741864E2A64FA /* Pods_ComboBoxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +69,8 @@
 				1BC8974F260CCC2E001E8608 /* ComboBoxSDK */,
 				1BC8975A260CCC2F001E8608 /* ComboBoxSDKTests */,
 				1BC8974E260CCC2E001E8608 /* Products */,
+				F653583F43CB0269790143DD /* Pods */,
+				8C9ACB01F81BD2EFD55FD967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,10 @@
 		1BC8974F260CCC2E001E8608 /* ComboBoxSDK */ = {
 			isa = PBXGroup;
 			children = (
+				1BC897BE260CD7BC001E8608 /* DropBoxTextField.swift */,
+				1BC8977D260CCDB7001E8608 /* EWMenuTableViewCell.swift */,
+				1BC8977E260CCDB7001E8608 /* EWPopMenu.swift */,
+				1BC8977F260CCDB7001E8608 /* EWPopMenuView.swift */,
 				1BC89750260CCC2E001E8608 /* ComboBoxSDK.h */,
 				1BC89751260CCC2E001E8608 /* Info.plist */,
 			);
@@ -84,6 +103,24 @@
 				1BC8975D260CCC2F001E8608 /* Info.plist */,
 			);
 			path = ComboBoxSDKTests;
+			sourceTree = "<group>";
+		};
+		8C9ACB01F81BD2EFD55FD967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F653583F43CB0269790143DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D106662482E10174D6AB6C5 /* Pods-ComboBoxSDK.debug.xcconfig */,
+				A5812B41114F4137C4DC565D /* Pods-ComboBoxSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../SeeneLevel/Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BC89761260CCC2F001E8608 /* Build configuration list for PBXNativeTarget "ComboBoxSDK" */;
 			buildPhases = (
+				F1799F5FBD07A7D6E2B253E5 /* [CP] Check Pods Manifest.lock */,
 				1BC89748260CCC2E001E8608 /* Headers */,
 				1BC89749260CCC2E001E8608 /* Sources */,
 				1BC8974A260CCC2E001E8608 /* Frameworks */,
@@ -147,6 +185,7 @@
 				TargetAttributes = {
 					1BC8974C260CCC2E001E8608 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1BC89755260CCC2F001E8608 = {
 						CreatedOnToolsVersion = 12.4;
@@ -189,11 +228,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F1799F5FBD07A7D6E2B253E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComboBoxSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BC89749260CCC2E001E8608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC897BF260CD7BC001E8608 /* DropBoxTextField.swift in Sources */,
+				1BC89781260CCDB7001E8608 /* EWPopMenu.swift in Sources */,
+				1BC89782260CCDB7001E8608 /* EWPopMenuView.swift in Sources */,
+				1BC89780260CCDB7001E8608 /* EWMenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,7 +408,9 @@
 		};
 		1BC89762260CCC2F001E8608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D106662482E10174D6AB6C5 /* Pods-ComboBoxSDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -353,9 +423,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunrui.ComboBoxSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +436,9 @@
 		};
 		1BC89763260CCC2F001E8608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5812B41114F4137C4DC565D /* Pods-ComboBoxSDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -376,6 +451,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunrui.ComboBoxSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -387,6 +464,7 @@
 		1BC89765260CCC2F001E8608 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ComboBoxSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +482,7 @@
 		1BC89766260CCC2F001E8608 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ComboBoxSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
