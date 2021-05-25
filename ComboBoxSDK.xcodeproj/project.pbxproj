@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1B5A80FC265BA00200A1919E /* Pods_ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5A80FB265BA00200A1919E /* Pods_ComboBoxSDK.framework */; };
 		1BC89757260CCC2F001E8608 /* ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC8974D260CCC2E001E8608 /* ComboBoxSDK.framework */; };
 		1BC8975C260CCC2F001E8608 /* ComboBoxSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8975B260CCC2F001E8608 /* ComboBoxSDKTests.swift */; };
 		1BC8975E260CCC2F001E8608 /* ComboBoxSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC89750260CCC2E001E8608 /* ComboBoxSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +29,6 @@
 		1BC89781260CCDB7001E8608 /* EWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8977E260CCDB7001E8608 /* EWPopMenu.swift */; };
 		1BC89782260CCDB7001E8608 /* EWPopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8977F260CCDB7001E8608 /* EWPopMenuView.swift */; };
 		1BC897BF260CD7BC001E8608 /* DropBoxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC897BE260CD7BC001E8608 /* DropBoxTextField.swift */; };
-		89FF9155980741864E2A64FA /* Pods_ComboBoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5A80FB265BA00200A1919E /* Pods_ComboBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ComboBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9AB35F260DC6BD00D261BA /* build_cp_to_pub.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_cp_to_pub.sh; sourceTree = "<group>"; };
 		1BC8974D260CCC2E001E8608 /* ComboBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComboBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC89750260CCC2E001E8608 /* ComboBoxSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComboBoxSDK.h; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		1BC8977F260CCDB7001E8608 /* EWPopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EWPopMenuView.swift; path = ComboBoxSDK/EWPopMenuView.swift; sourceTree = SOURCE_ROOT; };
 		1BC897BE260CD7BC001E8608 /* DropBoxTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBoxTextField.swift; sourceTree = "<group>"; };
 		2D106662482E10174D6AB6C5 /* Pods-ComboBoxSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComboBoxSDK.debug.xcconfig"; path = "Target Support Files/Pods-ComboBoxSDK/Pods-ComboBoxSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComboBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5812B41114F4137C4DC565D /* Pods-ComboBoxSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComboBoxSDK.release.xcconfig"; path = "Target Support Files/Pods-ComboBoxSDK/Pods-ComboBoxSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89FF9155980741864E2A64FA /* Pods_ComboBoxSDK.framework in Frameworks */,
+				1B5A80FC265BA00200A1919E /* Pods_ComboBoxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 		8C9ACB01F81BD2EFD55FD967 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E2234E687D6A319EDB4E575 /* Pods_ComboBoxSDK.framework */,
+				1B5A80FB265BA00200A1919E /* Pods_ComboBoxSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -463,21 +463,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D106662482E10174D6AB6C5 /* Pods-ComboBoxSDK.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = ComboBoxSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunrui.ComboBoxSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -491,21 +494,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5812B41114F4137C4DC565D /* Pods-ComboBoxSDK.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = ComboBoxSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunrui.ComboBoxSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
