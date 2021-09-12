@@ -1,0 +1,11 @@
+framework module ComboBoxSDK {
+  umbrella header "ComboBoxSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ComboBoxSDK.Swift {
+    header "ComboBoxSDK-Swift.h"
+    requires objc
+}
